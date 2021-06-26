@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F122F52526878D6C009ED9C2 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F122F52426878D6C009ED9C2 /* TextViews.swift */; };
 		F15ECEE42686527D007D0EF4 /* ReadMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15ECEE32686527D007D0EF4 /* ReadMeApp.swift */; };
 		F15ECEE62686527D007D0EF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15ECEE52686527D007D0EF4 /* ContentView.swift */; };
 		F15ECEE82686527E007D0EF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15ECEE72686527E007D0EF4 /* Assets.xcassets */; };
 		F15ECEEB2686527E007D0EF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15ECEEA2686527E007D0EF4 /* Preview Assets.xcassets */; };
+		F15ECEF626865CA7007D0EF4 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15ECEF526865CA7007D0EF4 /* Book.swift */; };
+		F15ECEF826865DD4007D0EF4 /* BookViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15ECEF726865DD4007D0EF4 /* BookViews.swift */; };
+		F15ECEFA268684CE007D0EF4 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15ECEF9268684CE007D0EF4 /* Library.swift */; };
+		F15ECEFC2686875F007D0EF4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15ECEFB2686875F007D0EF4 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F122F52426878D6C009ED9C2 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 		F15ECEE02686527D007D0EF4 /* ReadMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15ECEE32686527D007D0EF4 /* ReadMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMeApp.swift; sourceTree = "<group>"; };
 		F15ECEE52686527D007D0EF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F15ECEE72686527E007D0EF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F15ECEEA2686527E007D0EF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F15ECEEC2686527E007D0EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15ECEF526865CA7007D0EF4 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		F15ECEF726865DD4007D0EF4 /* BookViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViews.swift; sourceTree = "<group>"; };
+		F15ECEF9268684CE007D0EF4 /* Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Library.swift; path = "../../../Devsu/iOS/video-yssa-materials/05-lists/Final/ReadMe/ReadMe/Library.swift"; sourceTree = "<group>"; };
+		F15ECEFB2686875F007D0EF4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +62,9 @@
 		F15ECEE22686527D007D0EF4 /* ReadMe */ = {
 			isa = PBXGroup;
 			children = (
-				F15ECEE32686527D007D0EF4 /* ReadMeApp.swift */,
-				F15ECEE52686527D007D0EF4 /* ContentView.swift */,
-				F15ECEE72686527E007D0EF4 /* Assets.xcassets */,
-				F15ECEEC2686527E007D0EF4 /* Info.plist */,
+				F15ECEF426865C8F007D0EF4 /* Models */,
+				F15ECEF326865C69007D0EF4 /* Views */,
+				F15ECEF226865B6A007D0EF4 /* App */,
 				F15ECEE92686527E007D0EF4 /* Preview Content */,
 			);
 			path = ReadMe;
@@ -67,6 +76,36 @@
 				F15ECEEA2686527E007D0EF4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F15ECEF226865B6A007D0EF4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F15ECEE32686527D007D0EF4 /* ReadMeApp.swift */,
+				F15ECEEC2686527E007D0EF4 /* Info.plist */,
+				F15ECEE72686527E007D0EF4 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F15ECEF326865C69007D0EF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F15ECEE52686527D007D0EF4 /* ContentView.swift */,
+				F15ECEF726865DD4007D0EF4 /* BookViews.swift */,
+				F15ECEFB2686875F007D0EF4 /* DetailView.swift */,
+				F122F52426878D6C009ED9C2 /* TextViews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F15ECEF426865C8F007D0EF4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F15ECEF9268684CE007D0EF4 /* Library.swift */,
+				F15ECEF526865CA7007D0EF4 /* Book.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F15ECEE62686527D007D0EF4 /* ContentView.swift in Sources */,
+				F15ECEFC2686875F007D0EF4 /* DetailView.swift in Sources */,
 				F15ECEE42686527D007D0EF4 /* ReadMeApp.swift in Sources */,
+				F15ECEFA268684CE007D0EF4 /* Library.swift in Sources */,
+				F15ECEF626865CA7007D0EF4 /* Book.swift in Sources */,
+				F122F52526878D6C009ED9C2 /* TextViews.swift in Sources */,
+				F15ECEF826865DD4007D0EF4 /* BookViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ReadMe/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ReadMe/Info.plist;
+				INFOPLIST_FILE = ReadMe/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,7 +335,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ReadMe/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ReadMe/Info.plist;
+				INFOPLIST_FILE = ReadMe/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
