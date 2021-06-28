@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F122F52526878D6C009ED9C2 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F122F52426878D6C009ED9C2 /* TextViews.swift */; };
+		F122F527268799D4009ED9C2 /* PHPickerViewController.View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F122F526268799D4009ED9C2 /* PHPickerViewController.View.swift */; };
+		F1594EA32688EB1F00DC313F /* BookExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1594EA22688EB1F00DC313F /* BookExtension.swift */; };
+		F1594EA52688EB7C00DC313F /* ColorSchemeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1594EA42688EB7C00DC313F /* ColorSchemeExtension.swift */; };
+		F1594EA72688EBAE00DC313F /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1594EA62688EBAE00DC313F /* ImageExtension.swift */; };
 		F15ECEE42686527D007D0EF4 /* ReadMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15ECEE32686527D007D0EF4 /* ReadMeApp.swift */; };
 		F15ECEE62686527D007D0EF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15ECEE52686527D007D0EF4 /* ContentView.swift */; };
 		F15ECEE82686527E007D0EF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15ECEE72686527E007D0EF4 /* Assets.xcassets */; };
@@ -20,6 +24,10 @@
 
 /* Begin PBXFileReference section */
 		F122F52426878D6C009ED9C2 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
+		F122F526268799D4009ED9C2 /* PHPickerViewController.View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PHPickerViewController.View.swift; path = "../../../Devsu/iOS/video-yssa-materials/10-modal-views/Starter/ReadMe/ReadMe/Views/PHPickerViewController.View.swift"; sourceTree = "<group>"; };
+		F1594EA22688EB1F00DC313F /* BookExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookExtension.swift; sourceTree = "<group>"; };
+		F1594EA42688EB7C00DC313F /* ColorSchemeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeExtension.swift; sourceTree = "<group>"; };
+		F1594EA62688EBAE00DC313F /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		F15ECEE02686527D007D0EF4 /* ReadMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15ECEE32686527D007D0EF4 /* ReadMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMeApp.swift; sourceTree = "<group>"; };
 		F15ECEE52686527D007D0EF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +51,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1594EA12688EADD00DC313F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F1594EA22688EB1F00DC313F /* BookExtension.swift */,
+				F1594EA42688EB7C00DC313F /* ColorSchemeExtension.swift */,
+				F1594EA62688EBAE00DC313F /* ImageExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F15ECED72686527D007D0EF4 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +80,7 @@
 		F15ECEE22686527D007D0EF4 /* ReadMe */ = {
 			isa = PBXGroup;
 			children = (
+				F1594EA12688EADD00DC313F /* Extensions */,
 				F15ECEF426865C8F007D0EF4 /* Models */,
 				F15ECEF326865C69007D0EF4 /* Views */,
 				F15ECEF226865B6A007D0EF4 /* App */,
@@ -91,6 +110,7 @@
 		F15ECEF326865C69007D0EF4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F122F526268799D4009ED9C2 /* PHPickerViewController.View.swift */,
 				F15ECEE52686527D007D0EF4 /* ContentView.swift */,
 				F15ECEF726865DD4007D0EF4 /* BookViews.swift */,
 				F15ECEFB2686875F007D0EF4 /* DetailView.swift */,
@@ -177,12 +197,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1594EA52688EB7C00DC313F /* ColorSchemeExtension.swift in Sources */,
 				F15ECEE62686527D007D0EF4 /* ContentView.swift in Sources */,
+				F1594EA32688EB1F00DC313F /* BookExtension.swift in Sources */,
 				F15ECEFC2686875F007D0EF4 /* DetailView.swift in Sources */,
 				F15ECEE42686527D007D0EF4 /* ReadMeApp.swift in Sources */,
 				F15ECEFA268684CE007D0EF4 /* Library.swift in Sources */,
 				F15ECEF626865CA7007D0EF4 /* Book.swift in Sources */,
 				F122F52526878D6C009ED9C2 /* TextViews.swift in Sources */,
+				F122F527268799D4009ED9C2 /* PHPickerViewController.View.swift in Sources */,
+				F1594EA72688EBAE00DC313F /* ImageExtension.swift in Sources */,
 				F15ECEF826865DD4007D0EF4 /* BookViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

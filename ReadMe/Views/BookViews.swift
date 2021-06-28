@@ -6,21 +6,21 @@
 //
 
 import SwiftUI
+import Combine
 
-extension Book {
-    struct Image: View {
-        let title: String
-        let imageSize: CGFloat?
-        var body: some View {
-            
-            let symbol = SwiftUI.Image(title: title) ?? .init(systemName: "book")
-                
-            symbol
-                .resizable()
-                .scaledToFit()
-                .frame(width: imageSize, height: imageSize)
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/.weight(.light))
-                .foregroundColor(.secondary)
+struct BookmarkButton : View {
+    
+    @ObservedObject var book: Book
+    
+    var body: some View {
+        
+        let bookmark = "bookmark"
+        
+        Button{
+            book.readMe.toggle()
+        } label : {
+            Image(systemName: book.readMe ? "\(bookmark).fill" : bookmark)
+                .font(.system(size: 48, weight: .light))
         }
     }
 }
@@ -30,22 +30,20 @@ struct Book_Previews: PreviewProvider {
     static var previews: some View{
         
         VStack {
-            Book.Image(title: Book().title,imageSize: 80)
-            Book.Image(title: "", imageSize: 80)
-            Book.Image(title: "😎", imageSize: 80)
-        }
+            HStack {
+                BookmarkButton(book: .init())
+                BookmarkButton(book: .init(readMe: false))
+                Title(text: "Title", font: .title)
+                Author(text: "Author", font: .title2)
+            }
+                Book.Image(title: Book().title)
+                Book.Image(title: "")
+                Book.Image(title: "📖")
+            }
+            .previewInAllColorSchemes
     }
 }
 
-extension Image {
-    init?(title: String){
-        guard let character = title.first,
-        case let symbolName = "\(character.lowercased()).square",
-        UIImage(systemName: symbolName) != nil else {
-            return nil
-        }
-        
-        self.init(systemName: symbolName)
-    }
-    
-}
+
+
+
