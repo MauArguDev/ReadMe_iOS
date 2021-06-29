@@ -20,6 +20,8 @@
 		F15ECEF826865DD4007D0EF4 /* BookViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15ECEF726865DD4007D0EF4 /* BookViews.swift */; };
 		F15ECEFA268684CE007D0EF4 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15ECEF9268684CE007D0EF4 /* Library.swift */; };
 		F15ECEFC2686875F007D0EF4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15ECEFB2686875F007D0EF4 /* DetailView.swift */; };
+		F17C4692268A62A40099D87A /* NewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C4691268A62A40099D87A /* NewBookView.swift */; };
+		F17C4694268A678E0099D87A /* ReviewAndImageStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C4693268A678E0099D87A /* ReviewAndImageStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		F15ECEF726865DD4007D0EF4 /* BookViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViews.swift; sourceTree = "<group>"; };
 		F15ECEF9268684CE007D0EF4 /* Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Library.swift; path = "../../../Devsu/iOS/video-yssa-materials/05-lists/Final/ReadMe/ReadMe/Library.swift"; sourceTree = "<group>"; };
 		F15ECEFB2686875F007D0EF4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F17C4691268A62A40099D87A /* NewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookView.swift; sourceTree = "<group>"; };
+		F17C4693268A678E0099D87A /* ReviewAndImageStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewAndImageStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				F15ECEF726865DD4007D0EF4 /* BookViews.swift */,
 				F15ECEFB2686875F007D0EF4 /* DetailView.swift */,
 				F122F52426878D6C009ED9C2 /* TextViews.swift */,
+				F17C4691268A62A40099D87A /* NewBookView.swift */,
+				F17C4693268A678E0099D87A /* ReviewAndImageStack.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -205,7 +211,9 @@
 				F15ECEFA268684CE007D0EF4 /* Library.swift in Sources */,
 				F15ECEF626865CA7007D0EF4 /* Book.swift in Sources */,
 				F122F52526878D6C009ED9C2 /* TextViews.swift in Sources */,
+				F17C4692268A62A40099D87A /* NewBookView.swift in Sources */,
 				F122F527268799D4009ED9C2 /* PHPickerViewController.View.swift in Sources */,
+				F17C4694268A678E0099D87A /* ReviewAndImageStack.swift in Sources */,
 				F1594EA72688EBAE00DC313F /* ImageExtension.swift in Sources */,
 				F15ECEF826865DD4007D0EF4 /* BookViews.swift in Sources */,
 			);

@@ -6,35 +6,58 @@
 //
 
 import SwiftUI
-import Combine
 
 struct ContentView: View {
-    
-    @State var library = Library()
-    
-    var body: some View {
-        NavigationView {
-            List(library.sortedBooks) { book in
-                BookRow(book: book, image: $library.uiImages[book])
-            }.navigationBarTitle("My Library")
+  @State var addingNewBook = false
+  @EnvironmentObject var library: Library
+
+  var body: some View {
+    NavigationView {
+      List {
+        Button {
+          addingNewBook = true
+        } label: {
+          Spacer()
+
+          VStack(spacing: 6) {
+            Image(systemName: "book.circle")
+              .font(.system(size: 60))
+            Text("Add New Book")
+              .font(.title2)
+          }
+          
+          Spacer()
         }
+        .buttonStyle(BorderlessButtonStyle())
+        .padding(.vertical, 8)
+        .sheet(
+          isPresented: $addingNewBook,
+          content: NewBookView.init
+        )
+
+        ForEach(library.sortedBooks) { book in
+          BookRow(book: book)
+        }
+      }
+      .navigationBarTitle("My Library")
     }
+  }
 }
 
 struct BookRow: View {
     
     @ObservedObject var book: Book
     
-    @Binding var image: UIImage?
+    @EnvironmentObject var library : Library
     
     var body: some View {
         
         
         NavigationLink(
-            destination: DetailView(book: book, image: $image),
+            destination: DetailView(book: book),
             label: {
                 HStack {
-                    Book.Image(uiImage: image, title: book.title, imageSize: 80, cornerRadius: 20)
+                    Book.Image(uiImage: library.uiImages[book], title: book.title, imageSize: 80, cornerRadius: 20)
                     VStack(alignment: .leading){
                         VStack(alignment: .leading){
                             Title(text:book.title, font: .title2)
@@ -60,6 +83,7 @@ struct BookRow: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(Library())
             .previewInAllColorSchemes
     }
 }
